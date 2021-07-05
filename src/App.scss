@@ -5,24 +5,34 @@
 
 .navbar {
   display: flex;
+  justify-content: space-between;
   background-color: #242424;
   font-size: larger;
   color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
   ul {
     display: flex;
     list-style: none;
-    margin: 16px;
     li {
-      margin: 8px;
+      padding: 25px;
       cursor: pointer;
     }
   }
-
-  &__container {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
+  &__right {
+    &--non-mobile {
+    }
+    &--mobile {
+      button {
+        background: transparent;
+        border: 0;
+        color: #fff;
+        padding: 25px;
+        font-size: larger;
+        cursor: pointer;
+      }
+    }
   }
 }
 
@@ -71,7 +81,6 @@
   justify-content: center;
   align-items: center;
 }
-
 
 footer {
   display: flex;
