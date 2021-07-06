@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.scss";
 import Navbar from './components/Navbar/Navbar';
+import ProjectItem from "./components/ProjectItem/ProjectItem";
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -26,18 +27,7 @@ function App() {
         </div>
       </section>
       <section id="projects" className="projects">
-        <div className="projects__item">
-          <h1>Project 1</h1>
-        </div>
-        <div className="projects__item">
-          <h1>Project 2</h1>
-        </div>
-        <div className="projects__item">
-          <h1>Project 3</h1>
-        </div>
-        <div className="projects__item">
-          <h1>Project 4</h1>
-        </div>
+        <ProjectItem title="Project 1" className="projects__item"/>
       </section>
       <section id="about" className="about">
         <h1>About</h1>

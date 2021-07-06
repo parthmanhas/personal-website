@@ -1,0 +1,20 @@
+.project-item {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 16px;
+    padding: 8px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blanchedalmond;
+}
+.img{
+    width: 100px;
+}
+.title {
+    justify-content: center;
+}
+.content {
+    padding: 10px;
+}
